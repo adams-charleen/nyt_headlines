@@ -86,8 +86,6 @@ The figure titled **"Sentiment Distribution in Headlines"** is a histogram with 
 
 ![Sentiment Distribution](sentiment_distribution.png)
 
-![Temporal Sentiment](temporal_sentiment.png)
-
 
 ---
 
@@ -139,3 +137,10 @@ The figure titled **"Sentiment Distribution in Headlines"** is a histogram with 
 - Both suggest a modest negative slant overall, stronger for Israeli mentions
 
 ---
+
+
+### 📈 Insights from Temporality
+
+![Temporal Sentiment](temporal_sentiment.png)
+
+![Temporal Mentions](temporal_mentions.png)
