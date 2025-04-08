@@ -4,7 +4,7 @@
 
 ---
 
-## 📝 Abstract (Plain Language)
+## 📝 Abstract
 
 This project used the *NYT* Article Search API to scrape metadata from 915 articles containing mentions of Israeli and Palestinian topics published between October 2023 and March 2025. We extracted headline-level data and stored it in a structured SQLite database (`nyt_articles_metadata.db`) to support large-scale sentiment analysis. Although we initially aimed to extract full-text content, access limitations restricted our analysis to headlines.
 
