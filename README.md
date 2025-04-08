@@ -6,7 +6,7 @@
 
 ## 📝 Abstract
 
-This project used the *NYT* Article Search API to scrape metadata from 915 articles containing mentions of Israeli and Palestinian topics published between October 2023 and March 2025. We extracted headline-level data and stored it in a structured SQLite database (`nyt_articles_metadata.db`) to support large-scale sentiment analysis. Although we initially aimed to extract full-text content, access limitations restricted our analysis to headlines.
+This project used the *NYT* Article Search API to scrape metadata from 915 articles containing mentions of Israeli and Palestinian key word ("Israel," "Israeli," "Palestine," and "Palestinian") published between October 01, 2023 and March 07, 2025. We extracted headline-level data and stored it in a structured SQLite database (`nyt_articles_metadata.db`) to support large-scale sentiment analysis. 
 
 Using natural language processing tools, we found that Palestinian key words were mentioned more frequently (375 mentions; 40.98%) than Israeli terms (267 mentions; 29.18%), with a mention ratio of 0.71 — meaning that for every 1 Israeli mention, there were 1.40 Palestinian mentions. A two-tailed z-test for the difference in proportions yielded a **z-statistic of 5.29** and a **p-value < 0.000001**, indicating the difference is statistically significant. 
 
@@ -16,7 +16,7 @@ The average sentiment score for headlines mentioning Palestinian topics was slig
 
 ## 🚀 Impact Statement
 
-This project offers a reproducible pipeline and database for examining media bias in conflict reporting. By quantifying headline sentiment and frequency over time, it provides tools for journalists, scholars, and the public to critically assess framing and narrative tone in a high-impact news domain. The results are transparent, data-driven look at how one major media outlet frames issues related to Israel and Palestine.
+This project offers a reproducible pipeline and database for examining media bias in conflict reporting. By quantifying headline sentiment and frequency over time, it provides tools for journalists, scholars, and the public to critically assess framing and narrative tone in a high-impact news domain. The results are transparent, data-driven look at how one major media outlet frames issues.
 
 ---
 
