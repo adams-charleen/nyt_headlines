@@ -206,9 +206,42 @@ The figure titled **"Sentiment Distribution in Headlines"** is a histogram with 
 
 ---
 
-
 ### 📈 Temporality Insights
 
-![Temporal Sentiment](temporal_sentiment.png)
+![Temporal Sentiment](temporal_sentiment.png)  
+*Figure: Average sentiment over time for Israeli and Palestinian mentions.*
 
-![Temporal Mentions](temporal_mentions.png)
+![Temporal Mentions](temporal_mentions.png)  
+*Figure: Number of mentions over time for Israeli and Palestinian terms.*
+
+---
+
+### 📅 Key Observations
+
+#### 📰 Coverage Intensity
+- **Mentions peaked in October 2023**, likely in response to the Hamas attack and the subsequent Israeli military response.
+- After that initial peak, coverage **declined steadily**, with a few notable bumps.
+- **June 2024** stands out for a **spike in Palestinian mentions**, suggesting renewed media focus on developments involving Gaza or the West Bank.
+- By **January 2025**, coverage of both groups had largely tapered off.
+
+---
+
+#### 📊 Sentiment Trends
+- The overall tone of coverage remains **generally neutral**, with average sentiment scores near zero for most of the period.
+- However, there are **event-driven spikes in sentiment**, where the tone of headlines becomes notably more positive or negative.
+- In **June 2024**, for example, **Palestinian sentiment was unusually positive**, while **Israeli sentiment dropped sharply**, suggesting contrasting narratives or framing tied to a specific event.
+
+---
+
+#### 🧭 Focus and Framing
+- **Palestinian-related headlines outnumber Israeli-related ones** over the full time period.
+- Sentiment toward Palestinian topics fluctuates more widely — from **positive during international sympathy events** to **negative during conflict coverage**.
+- Israeli mentions, while less frequent, also show **fluctuating sentiment** — often **moving in the opposite direction** of Palestinian sentiment during high-impact moments.
+
+---
+
+#### 🎯 Event Impact
+- **Major geopolitical events clearly shape not only the volume but the tone** of NYT coverage.
+- The **June 2024 spike** is especially notable: it marks a **moment of positive sentiment in Palestinian coverage**, contrasted by a **sharp downturn in Israeli sentiment**, highlighting a moment of **polarized framing** likely tied to international reactions or political developments.
+
+---
