@@ -60,7 +60,7 @@ The final SQLite database (**`nyt_articles_metadata.db`**) was constructed using
 
 ---
 
-### 🧠 Why This Matters
+### 🔍 Why This Matters
 
 While headlines are shorter than full articles, they are powerful in framing public perception and journalistic tone. By analyzing the sentiment of *NYT* headlines related to Israeli and Palestinian issues, we can gain insight into potential media bias — even in the absence of full article content.
 
