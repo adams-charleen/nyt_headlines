@@ -1,6 +1,6 @@
 ---
 
-# Database of Israel-Palestine Headlines in the *New York Times* (NYT)
+# Database of Israel-Palestine Headlines in *The New York Times* (NYT)
 
 ---
 
