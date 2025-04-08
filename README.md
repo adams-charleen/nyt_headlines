@@ -27,7 +27,7 @@ This section describes how we built the `nyt_articles_metadata.db` database of *
 
 ---
 
-### 1. 🔍 Article Collection via NYT API
+### 1. 🔍 Article Collection via *NYT* API
 
 We began by using the **NYT Article Search API** to collect metadata for articles related to Israeli and Palestinian topics.
 
@@ -57,7 +57,7 @@ Our original goal was to extract **full article text** for a richer sentiment an
 
 - **Selenium WebDriver** (automated browser)
 - **User-Agent Rotation** (to reduce bot detection)
-- **Manual Login Prompt:** Users were prompted to log in to the NYT manually during script execution
+- **Manual Login Prompt:** Users were prompted to log in to the *NYT* manually during script execution
 - **Scroll Simulation:** Mimicked user scrolling to load article content
 - **CAPTCHA Handling:** Basic detection and prompt for manual CAPTCHA solving
 
@@ -97,7 +97,7 @@ In this case, sentiment analysis is applied to headlines from *NYT* to assess ho
 
 ## ⚙️ How the Sentiment Analysis Works
 
-This sentiment analysis focuses on NYT headlines that mention specific terms related to Israeli or Palestinian topics. The process uses a tool called **VADER** (Valence Aware Dictionary and sEntiment Reasoner), which is particularly effective for analyzing short texts like headlines.
+This sentiment analysis focuses on *NYT* headlines that mention specific terms related to Israeli or Palestinian topics. The process uses a tool called **VADER** (Valence Aware Dictionary and sEntiment Reasoner), which is particularly effective for analyzing short texts like headlines.
 
 ### 1. 🛠 Tools and Setup
 
@@ -161,7 +161,7 @@ Also reported:
 
 ## 📈 Figure: Sentiment Distribution in Headlines
 
-The figure titled **"Sentiment Distribution in Headlines"** is a histogram with **kernel density estimation (KDE)** curves, showing the distribution of sentiment scores for headlines mentioning Israeli and Palestinian terms in the NYT dataset. Sentiment scores range from **-1 (negative)** to **+1 (positive)**, with 0 representing neutrality.
+The figure titled **"Sentiment Distribution in Headlines"** is a histogram with **kernel density estimation (KDE)** curves, showing the distribution of sentiment scores for headlines mentioning Israeli and Palestinian terms in the *NYT* dataset. Sentiment scores range from **-1 (negative)** to **+1 (positive)**, with 0 representing neutrality.
 
 ---
 
@@ -262,7 +262,7 @@ The figure titled **"Sentiment Distribution in Headlines"** is a histogram with 
 ---
 
 #### 🎯 Event Impact
-- **Major geopolitical events clearly shape not only the volume but the tone** of NYT coverage.
+- **Major geopolitical events clearly shape not only the volume but the tone** of *NYT* coverage.
 - The **June 2024 spike** is especially notable: it marks a **moment of positive sentiment in Palestinian coverage**, contrasted by a **sharp downturn in Israeli sentiment**, highlighting a moment of **polarized framing** likely tied to international reactions or political developments.
 
 ---
