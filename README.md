@@ -2,7 +2,7 @@
 
 ## 🧪 Methods: How the Database Was Created
 
-This section describes how we built the `nyt_articles_metadata.db` database of *New York Times* (*NYT*) articles for sentiment analysis.
+This section describes how we built the `nyt_articles_metadata.db` database of *The New York Times* (*NYT*) articles for sentiment analysis.
 
 ---
 
@@ -62,7 +62,7 @@ The final SQLite database (**`nyt_articles_metadata.db`**) was constructed using
 
 ### 🧠 Why This Matters
 
-While headlines are shorter than full articles, they are powerful in framing public perception and journalistic tone. By analyzing the sentiment of NYT headlines related to Israeli and Palestinian issues, we can gain insight into potential media bias — even in the absence of full article content.
+While headlines are shorter than full articles, they are powerful in framing public perception and journalistic tone. By analyzing the sentiment of *NYT* headlines related to Israeli and Palestinian issues, we can gain insight into potential media bias — even in the absence of full article content.
 
 ---
 
@@ -70,7 +70,7 @@ While headlines are shorter than full articles, they are powerful in framing pub
 
 Sentiment analysis is a natural language processing (NLP) technique used to determine the emotional tone or attitude expressed in a piece of text, such as a headline, review, or social media post. It typically categorizes text as **positive**, **negative**, or **neutral**, and can sometimes detect more specific emotions like happiness, anger, or sadness.
 
-In this case, sentiment analysis is applied to headlines from *The New York Times (NYT)* to assess how the newspaper portrays topics related to **Israeli** and **Palestinian** issues.
+In this case, sentiment analysis is applied to headlines from *NYT* to assess how the newspaper portrays topics related to **Israeli** and **Palestinian** issues.
 
 ---
 
