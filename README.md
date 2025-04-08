@@ -139,7 +139,7 @@ The figure titled **"Sentiment Distribution in Headlines"** is a histogram with 
 ---
 
 
-### 📈 Insights from Temporality
+### 📈 Temporality Insights
 
 ![Temporal Sentiment](temporal_sentiment.png)
 
