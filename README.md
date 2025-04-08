@@ -86,6 +86,9 @@ The figure titled **"Sentiment Distribution in Headlines"** is a histogram with 
 
 ![Sentiment Distribution](sentiment_distribution.png)
 
+![Temporal Sentiment](temporal_sentiment.png)
+
+
 ---
 
 ### 🔍 Key Observations
