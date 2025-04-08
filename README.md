@@ -84,6 +84,8 @@ The figure titled **"Sentiment Distribution in Headlines"** is a histogram with 
 - **Red Bars:** Palestinian-related terms (`"Palestinian"`, `"Palestine"`, `"Hamas"`, `"Gaza"`)
 - **KDE Curves:** Smoothed density estimates overlaid on the histograms
 
+![Sentiment Distribution](sentiment_distribution.png)
+
 ---
 
 ### 🔍 Key Observations
