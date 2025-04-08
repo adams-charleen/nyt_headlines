@@ -8,7 +8,7 @@ This section describes how we built the `nyt_articles_metadata.db` database of *
 
 ### 1. 🔍 Article Collection via NYT API
 
-We began by using the **New York Times Article Search API** to collect metadata for articles related to Israeli and Palestinian topics.
+We began by using the **NYT Article Search API** to collect metadata for articles related to Israeli and Palestinian topics.
 
 - **Search Query:** `Israel OR Israeli OR Palestine OR Palestinian`
 - **Date Range:** October 1, 2023 – March 7, 2025
