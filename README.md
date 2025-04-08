@@ -1,8 +1,12 @@
 ---
 
+# Database of Israel-Palestine Headlines in the *New York Times*
+
+---
+
 ## 🧪 Methods: How the Database Was Created
 
-This section describes how we built the `nyt_articles_metadata.db` database of *The New York Times* (*NYT*) articles for sentiment analysis.
+This section describes how we built the `nyt_articles_metadata.db` database of *NYT* articles for sentiment analysis.
 
 ---
 
