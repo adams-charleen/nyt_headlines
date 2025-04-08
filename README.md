@@ -1,3 +1,71 @@
+---
+
+## 🧪 Methods: How the Database Was Created
+
+This section describes how we built the `nyt_articles_metadata.db` database of *New York Times* (*NYT*) articles for sentiment analysis.
+
+---
+
+### 1. 🔍 Article Collection via NYT API
+
+We began by using the **New York Times Article Search API** to collect metadata for articles related to Israeli and Palestinian topics.
+
+- **Search Query:** `Israel OR Israeli OR Palestine OR Palestinian`
+- **Date Range:** October 1, 2023 – March 7, 2025
+- **API Key:** Accessed using a registered NYT developer key
+- **Pagination:** The API was queried page-by-page with a randomized delay to avoid rate limits and bot detection
+- **Retry Logic:** Each API call included exponential backoff for HTTP 429 errors (Too Many Requests)
+
+The metadata collected for each article included:
+
+- `headline`
+- `web_url`
+- `pub_date`
+- `byline`
+- `section`
+- `full_text` (left blank initially)
+
+All records were stored in a temporary SQLite database:  
+**`nyt_articles_metadata.db`**
+
+---
+
+### 2. 🕷️ Attempted Scraping of Full Text Articles
+
+Our original goal was to extract **full article text** for a richer sentiment analysis. To do this, we used:
+
+- **Selenium WebDriver** (automated browser)
+- **User-Agent Rotation** (to reduce bot detection)
+- **Manual Login Prompt:** Users were prompted to log in to the NYT manually during script execution
+- **Scroll Simulation:** Mimicked user scrolling to load article content
+- **CAPTCHA Handling:** Basic detection and prompt for manual CAPTCHA solving
+
+Despite these efforts, **full text scraping proved unreliable**, primarily due to:
+
+- Dynamic page loading
+- Paywall restrictions
+- CAPTCHA interruptions
+- Inconsistent page structure
+
+As a result, we were only able to extract **headlines**, which we used as the basis for the sentiment analysis.
+
+---
+
+### 3. 💾 Database Construction
+
+The final SQLite database (**`nyt_articles_metadata.db`**) was constructed using the `pandas` and `sqlite3` libraries:
+
+- All article metadata (with empty `full_text`) was saved to a table called `articles`
+- This database served as the foundation for downstream sentiment analysis using headlines
+
+---
+
+### 🧠 Why This Matters
+
+While headlines are shorter than full articles, they are powerful in framing public perception and journalistic tone. By analyzing the sentiment of NYT headlines related to Israeli and Palestinian issues, we can gain insight into potential media bias — even in the absence of full article content.
+
+---
+
 ## 🧠 What is Sentiment Analysis?
 
 Sentiment analysis is a natural language processing (NLP) technique used to determine the emotional tone or attitude expressed in a piece of text, such as a headline, review, or social media post. It typically categorizes text as **positive**, **negative**, or **neutral**, and can sometimes detect more specific emotions like happiness, anger, or sadness.
