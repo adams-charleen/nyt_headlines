@@ -1,12 +1,12 @@
 ---
 
-# Database of Israel-Palestine Headlines in the *New York Times* (*NYT*)
+# Database of Israel-Palestine Headlines in the *New York Times* (NYT)
 
 ---
 
 ## 📝 Abstract
 
-This project used the *NYT* Article Search API to scrape metadata from 915 articles containing mentions of Israeli and Palestinian key words ("Israel," "Israeli," "Palestine," and "Palestinian") published between October 01, 2023 and March 07, 2025. We extracted headline-level data and stored it in a structured SQLite database (`nyt_articles_metadata.db`) to support large-scale sentiment analysis. 
+This project used the NYT Article Search API to scrape metadata from 915 articles containing mentions of Israeli and Palestinian key words ("Israel," "Israeli," "Palestine," and "Palestinian") published between October 01, 2023 and March 07, 2025. We extracted headline-level data and stored it in a structured SQLite database (`nyt_articles_metadata.db`) to support large-scale sentiment analysis. 
 
 Using natural language processing tools, we found that Palestinian key words were mentioned more frequently (375 mentions; 40.98%) than Israeli terms (267 mentions; 29.18%), with a mention ratio of 0.71 — meaning that for every 1 Israeli mention, there were 1.40 Palestinian mentions. A two-tailed z-test for the difference in proportions yielded a **z-statistic of 5.29** and a **p-value < 0.000001**, indicating the difference is statistically significant. 
 
@@ -23,11 +23,11 @@ This project offers a reproducible pipeline and database for examining media bia
 
 ## 🧪 Methods: How the Database Was Created
 
-This section describes how we built the `nyt_articles_metadata.db` database of *NYT* articles for sentiment analysis.
+This section describes how we built the `nyt_articles_metadata.db` database of NYT articles for sentiment analysis.
 
 ---
 
-### 1. 🔍 Article Collection via *NYT* API
+### 1. 🔍 Article Collection via NYT API
 
 We began by using the **NYT Article Search API** to collect metadata for articles related to Israeli and Palestinian topics.
 
@@ -57,7 +57,7 @@ Our original goal was to extract **full article text** for a richer sentiment an
 
 - **Selenium WebDriver** (automated browser)
 - **User-Agent Rotation** (to reduce bot detection)
-- **Manual Login Prompt:** Users were prompted to log in to the *NYT* manually during script execution
+- **Manual Login Prompt:** Users were prompted to log in to the NYT manually during script execution
 - **Scroll Simulation:** Mimicked user scrolling to load article content
 - **CAPTCHA Handling:** Basic detection and prompt for manual CAPTCHA solving
 
@@ -83,7 +83,7 @@ The final SQLite database (**`nyt_articles_metadata.db`**) was constructed using
 
 ### 🔍 Why This Matters
 
-While headlines are shorter than full articles, they are powerful in framing public perception and journalistic tone. By analyzing the sentiment of *NYT* headlines related to Israeli and Palestinian issues, we can gain insight into potential media bias — even in the absence of full article content.
+While headlines are shorter than full articles, they are powerful in framing public perception and journalistic tone. By analyzing the sentiment of NYT headlines related to Israeli and Palestinian issues, we can gain insight into potential media bias — even in the absence of full article content.
 
 ---
 
@@ -91,13 +91,13 @@ While headlines are shorter than full articles, they are powerful in framing pub
 
 Sentiment analysis is a natural language processing (NLP) technique used to determine the emotional tone or attitude expressed in a piece of text, such as a headline, review, or social media post. It typically categorizes text as **positive**, **negative**, or **neutral**, and can sometimes detect more specific emotions like happiness, anger, or sadness.
 
-In this case, sentiment analysis is applied to headlines from *NYT* to assess how the newspaper portrays topics related to **Israeli** and **Palestinian** issues.
+In this case, sentiment analysis is applied to headlines from NYT to assess how the newspaper portrays topics related to **Israeli** and **Palestinian** issues.
 
 ---
 
 ## ⚙️ How the Sentiment Analysis Works
 
-This sentiment analysis focuses on *NYT* headlines that mention specific terms related to Israeli or Palestinian topics. The process uses a tool called **VADER** (Valence Aware Dictionary and sEntiment Reasoner), which is particularly effective for analyzing short texts like headlines.
+This sentiment analysis focuses on NYT headlines that mention specific terms related to Israeli or Palestinian topics. The process uses a tool called **VADER** (Valence Aware Dictionary and sEntiment Reasoner), which is particularly effective for analyzing short texts like headlines.
 
 ### 1. 🛠 Tools and Setup
 
@@ -161,7 +161,7 @@ Also reported:
 
 ## 📈 Figure: Sentiment Distribution in Headlines
 
-The figure titled **"Sentiment Distribution in Headlines"** is a histogram with **kernel density estimation (KDE)** curves, showing the distribution of sentiment scores for headlines mentioning Israeli and Palestinian terms in the *NYT* dataset. Sentiment scores range from **-1 (negative)** to **+1 (positive)**, with 0 representing neutrality.
+The figure titled **"Sentiment Distribution in Headlines"** is a histogram with **kernel density estimation (KDE)** curves, showing the distribution of sentiment scores for headlines mentioning Israeli and Palestinian terms in the NYT dataset. Sentiment scores range from **-1 (negative)** to **+1 (positive)**, with 0 representing neutrality.
 
 ---
 
@@ -262,7 +262,7 @@ The figure titled **"Sentiment Distribution in Headlines"** is a histogram with 
 ---
 
 #### 🎯 Event Impact
-- **Major geopolitical events clearly shape not only the volume but the tone** of *NYT* coverage.
+- **Major geopolitical events clearly shape not only the volume but the tone** of NYT coverage.
 - The **June 2024 spike** is especially notable: it marks a **moment of positive sentiment in Palestinian coverage**, contrasted by a **sharp downturn in Israeli sentiment**, highlighting a moment of **polarized framing** likely tied to international reactions or political developments.
 
 ---
